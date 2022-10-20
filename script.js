@@ -5,6 +5,7 @@ const onProgress = (event) => {
   updatingBar.style.width = `${event.detail.totalProgress * 100}%`;
   if (event.detail.totalProgress === 1) {
     progressBar.classList.add('hide');
+    fetch('girl.usdz')
   } else {
     progressBar.classList.remove('hide');
     if (event.detail.totalProgress === 0) {
